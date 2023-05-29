@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Navbar from '../components/Navbar/Navbar';
 import './TodoPage.css'
 import TodoList from '../components/TodoList/TodoList';
 import { addTodoList } from '../store/todoSlice';
 import { RootState } from '../store/store';
-import { loadState } from '../store/storage';
+
 
 
 interface TodoItem {
@@ -25,10 +25,6 @@ const TodoPage = () => {
   const todoLists = useSelector((state: RootState) => state.todo.todoLists)
   const [listName, setListName] = useState<string>('')
 
-
-
-
-  // if (listName.trim() === '') return;
 
   const handleAddTodoList = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()

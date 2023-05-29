@@ -1,19 +1,14 @@
-import React, { useState, useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux/es/exports';
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux/es/exports';
 import { ReactComponent as TodoAddIcon } from '../../assets/AddTodo.svg'
-import { RootState } from '../../store/store';
+
 import './TodoList.css'
 import { addTodoItem } from '../../store/todoSlice';
-import { TodoItem } from '../../store/todoSlice';
+
 import TodosItem from '../TodosItem/TodosItem';
-import { loadState } from '../../store/storage';
 
 
-type TodoListProp = {
-  id: number
-  listName: string;
-  todoItems: TodoItem[]
-};
+
 
 const TodoList = ({ listItem }: any) => {
   const dispatch = useDispatch()
