@@ -9,7 +9,7 @@ const TodosItem = ({ item, listId }: any) => {
 
   return (
     <>
-      <div className='todo__item'>
+      <div className={`todo__item ${isEdit ? 'edit__line' : ''}`} >
         <div className="todo__item__header">
           <div>
             <AddTodo />
@@ -22,7 +22,7 @@ const TodosItem = ({ item, listId }: any) => {
         <div className="todo__item__description">
           {item.description}
         </div>
-      </div>
+      </div >
 
       <EditTodo isEdit={isEdit} setIsEdit={setIsEdit} content={item} listId={listId} />
 

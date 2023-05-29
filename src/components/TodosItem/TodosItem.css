@@ -27,3 +27,7 @@
   font-family: Inter, sans-serif;
   color: #808191;
 }
+
+.edit__line {
+  border-left: 4px solid blue;
+}
