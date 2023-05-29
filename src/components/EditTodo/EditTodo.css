@@ -1,0 +1,74 @@
+.edit__todo {
+  position: fixed;
+  background-color: #000;
+  z-index: 999;
+  top: 4.6rem;
+  width: 250px;
+  right: 0;
+  border-left: 2px solid #242731;
+  height: 100%;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.edit__todo.active {
+  transform: translateX(0);
+}
+
+.edit__todo h5 {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.edit__todo form input,
+.edit__todo form textarea {
+  width: 100%;
+  background-color: #242731;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 12px;
+  color: #fff;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+
+form input {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+form textarea {
+  font-family: Inter, sans-serif;
+  padding: 1rem;
+}
+
+.edit__form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.edit__form button {
+  font-family: Inter, sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 0.5rem;
+  background-color: #3772ff;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.edit__form button:hover {
+  filter: drop-shadow(0px 0px 10px rgb(32, 55, 100));
+  cursor: pointer;
+}

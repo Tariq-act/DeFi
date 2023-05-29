@@ -1,0 +1,29 @@
+.todo__item {
+  background-color: #242731;
+  border-radius: 10px;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.todo__item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo__item__header div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.edit__icon {
+  background-color: #353945;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.todo__item__description {
+  font-family: Inter, sans-serif;
+  color: #808191;
+}
